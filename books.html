@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Info Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Your CSS styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1976D2;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #select1,
+        #select2,
+        #search-input {
+            border: none;
+            padding: 8px;
+            font-size: 14px;
+            border-radius: 4px;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        #search-icon {
+            padding: 8px;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            color: #757575;
+            cursor: pointer;
+        }
+        .btn {
+            padding: 8px 16px;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 10px 20px;
+            border-left: 4px solid #4CAF50;
+            background-color: #f2f2f2;
+        }
+        blockquote p {
+            margin: 0;
+            font-style: italic;
+        }
+        .book-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .book-image {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .book-name {
+            font-size: 18px;
+        }
+        /* Additional styles for new sections */
+        section {
+            padding: 20px;
+            background-color: #f7f7f7;
+            margin-top: 20px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .featured-books {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .book-container {
+            flex: 0 0 calc(33.33% - 20px);
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .book-image {
+            max-width: 100px;
+            margin: 0 auto 10px;
+        }
+        .book-name {
+            font-size: 18px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <i class="fas fa-book"></i>
+        <span>BookHub</span>
+    </header>
+    <nav class="Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div>
+            <input id="search-input" type="text" placeholder="Search">
+            <i id="search-icon" class="fas fa-search"></i>
+        </div>
+        <ul>
+            <li><a class="btn" href="#">Log In</a></li>
+            <li><a class="btn" href="#">Sign Up</a></li>
+        </ul>
+    </nav>
+    <section id="books">
+        <h2 class="section-title">Explore a Variety of Books</h2>
+        <div class="featured-books">
+            <div class="book-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhcA3JhI42Wb7mvVoBIlGCA92p9Povi_oMnw&usqp=CAU" alt="Atomic Habits" class="book-image">
+                <p class="book-name">Atomic Habits</p>
+            </div>
+            <!-- Add more book containers here -->
+        </div>
+    </section>
+    <section id="about">
+        <h2 class="section-title">About BookHub</h2>
+        <!-- Add content about your website and goals -->
+    </section>
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <!-- Add a contact form or contact details -->
+    </section>
+</body>
+</html>
